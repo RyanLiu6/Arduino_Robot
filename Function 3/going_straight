@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void go_straight() {
+	adjust_left(left_speed);
+
+	long left_rotation = 0;
+	long right_rotation = 0;
+	long difference;
+
+	while(left_rotation < 300 || left_rotation > 500){
+		left_rotation = get_one_time(left_sensor);
+	}
+
+	while(right_rotation < 300 || right_rotation > 500){
+		right_rotation = get_one_time(right_sensor);
+	}
+
+	difference = right_rotation - left_rotation;
+
+	Serial.print(left_rotation);
+	Serial.print("      ");
+	Serial.print(right_rotation);
+	Serial.print("    difference:   ");
+	Serial.println(difference);
+
+
+
+	if (difference > 10){
+		// Slow down
+		left_speed -= SPEED_ADJUST;
+	}
+
+	else if (difference < -10){
+		// Speed up
+		left_speed += SPEED_ADJUST;
+		if(left_speed > MAX_SPEED){
+			left_speed = MAX_SPEED;
+		}
+	}
+
+	adjust_left(left_speed);
+
+}
