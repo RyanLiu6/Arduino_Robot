@@ -5,7 +5,6 @@ Uses Code from previous projectfor ELEC 291 - UBC
 - After extensively testing the Ultrasonic sensors and possibly new IR sensors,
 I will start with fresh
 
-Goals:
 
 1. Autonomous robot that does not need any input to move
 2. Does not bump into any walls
