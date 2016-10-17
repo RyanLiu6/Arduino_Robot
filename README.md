@@ -6,6 +6,7 @@ Uses Code from previous projectfor ELEC 291 - UBC
 I will start with fresh
 
 Goals:
+
 1. Autonomous robot that does not need any input to move
 2. Does not bump into any walls
 3. Moves around the room "smartly"
