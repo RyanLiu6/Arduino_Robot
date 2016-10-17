@@ -5,14 +5,15 @@ Uses Code from previous projectfor ELEC 291 - UBC
 - After extensively testing the Ultrasonic sensors and possibly new IR sensors,
 I will start with fresh
 
+Goals:
 
 1. Autonomous robot that does not need any input to move
 2. Does not bump into any walls
 3. Moves around the room "smartly"
-⋅⋅1. Current thoughts: Move through a room once using object detection
-⋅⋅2. Want to also save an image of the ceiling for each room and after one run,
+    1. Current thoughts: Move through a room once using object detection
+    2. Want to also save an image of the ceiling for each room and after one run,
     and will be able to differentiate between rooms and apply previous movements
-⋅⋅3. Be able to recognize where is a cliff, and stop before falling off
+    3. Be able to recognize where is a cliff, and stop before falling off
 4. Control the robot via Bluetooth using my Android Phone
 
 The project is very similar to a Roomba, as it does most of those things. I have always
